@@ -247,6 +247,7 @@ for idx, inv in enumerate(inversiones_completas, start=1):
 # Convertir a DataFrame
 df_tabla = pd.DataFrame(datos_tabla)
 
+
 # Formatear valores numéricos
 for col in df_tabla.columns:
     if col != "Periodo":
@@ -318,9 +319,12 @@ def convertir_a_excel(df):
 # Botón para descargar en Excel
 st.download_button(
     label="📥 Descargar tabla en Excel",
-    data=convertir_a_excel(datos_tabla),
+    data=convertir_a_excel(df_numerico),
     file_name="proyeccion_ahorro.xlsx",
     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
 )
 
 # endregion descargar excel
+st.write("📊 Debug - Vista previa de la tabla de datos:")
+st.write(df_numerico)
+
