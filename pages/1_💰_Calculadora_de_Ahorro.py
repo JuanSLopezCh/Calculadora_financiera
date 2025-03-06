@@ -325,6 +325,3 @@ st.download_button(
 )
 
 # endregion descargar excel
-st.write("📊 Debug - Vista previa de la tabla de datos:")
-st.write(df_numerico)
-
