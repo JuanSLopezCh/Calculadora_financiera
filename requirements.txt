@@ -2,6 +2,5 @@ streamlit
 matplotlib
 pandas
 numpy
-io
 plotly
 scipy
