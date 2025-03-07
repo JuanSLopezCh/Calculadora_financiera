@@ -25,7 +25,7 @@ def obtener_valor(texto, valor_default=0):
 # Entrada de datos
 capital = obtener_valor(st.sidebar.text_input("💰 ¿Cuánto te van a prestar?", placeholder="Ej: 1000000"))
 Interes = obtener_valor(st.sidebar.text_input("📈 ¿A qué % de Interés E.A.?", placeholder="Ej: 26"))
-Meses = st.sidebar.selectbox("📆 ¿Durante cuántos meses?", list(range(12, 61)), index=0)
+Meses = st.sidebar.selectbox("📆 ¿Durante cuántos meses?", list(range(12, 121)), index=0)
 cuota_manejo = obtener_valor(st.sidebar.text_input("💳 Cuota de manejo mensual", placeholder="Ej: 100"))
 seguro = obtener_valor(st.sidebar.text_input("🛡️ Seguro mensual", placeholder="Ej: 50"))
 otros_cobros = obtener_valor(st.sidebar.text_input("📋 Otros Cobros", placeholder="Ej: 50"))
