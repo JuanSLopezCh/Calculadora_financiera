@@ -30,6 +30,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown(
+    """
+    <style>
+        [data-testid="stSidebar"] {
+            min-width: 350px;  /* Cambia el valor según el ancho deseado */
+            max-width: 350px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # region Inversion_Inicial
 
