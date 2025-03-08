@@ -17,6 +17,19 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown(
+    """
+    <style>
+    /* Aumentar tamaño de los nombres de las páginas en el sidebar */
+    div[data-testid="stSidebarNav"] ul li a {
+        font-size: 20px !important; /* Cambia el tamaño según prefieras */
+        font-weight: bold !important; /* Opcional: poner en negrita */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # region Inversion_Inicial
 
