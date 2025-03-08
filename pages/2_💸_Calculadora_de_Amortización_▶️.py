@@ -24,6 +24,18 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+st.markdown(
+    """
+    <style>
+        [data-testid="stSidebar"] {
+            min-width: 350px;  /* Cambia el valor según el ancho deseado */
+            max-width: 350px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.sidebar.markdown("<h1 style='text-align: left; font-size: 24px;'>🔧 Parámetros del Préstamo</h1>", unsafe_allow_html=True)
 
 # Función para convertir la entrada a número y manejar errores
