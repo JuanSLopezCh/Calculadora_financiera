@@ -12,7 +12,18 @@ st.markdown(
     "<p style='position: absolute; top: -90px; right: 20px; font-size: 12px; color: white;'>Por Juan Sebastian Lopez</p>",
     unsafe_allow_html=True
 )
-
+st.markdown(
+    """
+    <style>
+    /* Aumentar tamaño de los nombres de las páginas en el sidebar */
+    div[data-testid="stSidebarNav"] ul li a {
+        font-size: 20px !important; /* Cambia el tamaño según prefieras */
+        font-weight: bold !important; /* Opcional: poner en negrita */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.sidebar.markdown("<h1 style='text-align: left; font-size: 24px;'>🔧 Parámetros del Préstamo</h1>", unsafe_allow_html=True)
 
 # Función para convertir la entrada a número y manejar errores
