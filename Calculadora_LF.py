@@ -31,6 +31,18 @@ st.markdown(
     """
 )
 
+st.markdown(
+    """
+    <style>
+        [data-testid="stSidebar"] {
+            min-width: 350px;  /* Cambia el valor según el ancho deseado */
+            max-width: 350px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Crear columnas para organizar las tarjetas
 col1, col2 = st.columns(2)
 
